@@ -39,6 +39,14 @@ button.btn:hover, button.btn:focus {
   color: #fff;
   outline: none;
 }
+#li-tooltip {
+  margin-top: -28px;
+  z-index: 1;
+  position: absolute;
+  display: none;
+}
+.invisible { display: none; }
+
 .items {
   margin-top: 80px;
   list-style: none;
@@ -49,6 +57,7 @@ li {
   border-left: 2px solid #000;
   font-size: 28px;
   margin: 0 0 36px;
+  cursor: default;
 }
 .completed {
   color: #999;

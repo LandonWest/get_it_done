@@ -17,10 +17,23 @@ var main = function(){
     $(this).blur();
   })
 
-  //strikethrough/italicise items when clicked
+
+  // display tooltip on ul hover
+  var $tt = $('#li-tooltip')
+  $(document).on({
+    mouseenter: function(){
+      $tt.fadeTo('slow', 1);
+    },
+    mouseleave: function(){
+      $tt.fadeTo('slow', 0);
+    }
+  }, "#items"); //pass the element as an argument to .on
+
+
+  // strikethrough/italicise items when clicked
   $(document).on('click', 'li', function(){
     $(this).addClass('completed');
-  })
+  });
 
   // remove completed items on click
   $(document).on('click', '.completed', function(){
