@@ -50,3 +50,8 @@ li {
   font-size: 28px;
   margin: 0 0 36px;
 }
+.completed {
+  color: #999;
+  text-decoration: line-through;
+  font-style: italic;
+}
