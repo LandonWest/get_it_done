@@ -26,6 +26,10 @@ var main = function(){
   $(document).on('click', '.completed', function(){
     $(this).remove();
   });
+
+  // reorder list items
+  $('#items').sortable();
+
 }
 
 $(document).ready(main);
