@@ -34,9 +34,10 @@ button.btn {
   padding: 20px 24px;
   transition: background-color 1s, color 1s;
 }
-button.btn:hover {
+button.btn:hover, button.btn:focus {
   background-color: #00f28f;
   color: #fff;
+  outline: none;
 }
 .items {
   margin-top: 80px;

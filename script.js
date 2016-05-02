@@ -13,6 +13,9 @@ var main = function(){
     return false;
   });
 
+  $(".btn").mouseup(function(){
+    $(this).blur();
+  })
 }
 
 $(document).ready(main);
